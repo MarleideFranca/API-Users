@@ -8,7 +8,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: "Knex_test"
+      database: "Knex_test",
       user: "postgres",
       password: "rapha"
     },

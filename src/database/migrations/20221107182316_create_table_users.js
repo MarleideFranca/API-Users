@@ -1,3 +1,4 @@
+
 const { onUpdateTrigger } = require('../../../knexfile')
 
 exports.up = async knex => knex.schema.createTable('users', table => {
@@ -9,5 +10,5 @@ exports.up = async knex => knex.schema.createTable('users', table => {
   }).then(() => knex.raw(onUpdateTrigger('users')))
 
 exports.down = async knex => knex.schema.dropTable('users')
-Footer
+
 
